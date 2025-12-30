@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(0 0% 0%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(0 0% 0%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(0 0% 0%);
+  --color-primary: hsl(0 0% 0%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(0 0% 96.1%);
+  --color-secondary-foreground: hsl(0 0% 0%);
+  --color-muted: hsl(0 0% 96.1%);
+  --color-muted-foreground: hsl(0 0% 45.1%);
+  --color-accent: hsl(0 0% 92%);
+  --color-accent-foreground: hsl(0 0% 0%);
+  --color-destructive: hsl(0 0% 0%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(0 0% 0%);
+  --color-input: hsl(0 0% 0%);
+  --color-ring: hsl(0 0% 0%);
+  --radius-lg: 0px;
+  --radius-md: 0px;
+  --radius-sm: 0px;
+}
+
+.dark {
+  --color-background: hsl(0 0% 0%);
+  --color-foreground: hsl(0 0% 100%);
+  --color-card: hsl(0 0% 0%);
+  --color-card-foreground: hsl(0 0% 100%);
+  --color-popover: hsl(0 0% 0%);
+  --color-popover-foreground: hsl(0 0% 100%);
+  --color-primary: hsl(0 0% 100%);
+  --color-primary-foreground: hsl(0 0% 0%);
+  --color-secondary: hsl(0 0% 14.9%);
+  --color-secondary-foreground: hsl(0 0% 100%);
+  --color-muted: hsl(0 0% 14.9%);
+  --color-muted-foreground: hsl(0 0% 63.9%);
+  --color-accent: hsl(0 0% 14.9%);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-destructive: hsl(0 0% 100%);
+  --color-destructive-foreground: hsl(0 0% 0%);
+  --color-border: hsl(0 0% 100%);
+  --color-input: hsl(0 0% 100%);
+  --color-ring: hsl(0 0% 100%);
+}
