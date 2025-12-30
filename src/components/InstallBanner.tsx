@@ -21,7 +21,7 @@ export function InstallBanner() {
 
   return (
     <div className="bg-foreground text-background p-4 mb-8 border-4 border-foreground relative animate-in fade-in slide-in-from-top duration-500">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mr-8">
+      <div className="flex flex-col justify-between gap-6 mr-8">
         <div className="space-y-1">
           <h3 className="text-xl font-[1000] uppercase tracking-tighter leading-none">
             Offline Capability Detected
@@ -31,7 +31,7 @@ export function InstallBanner() {
             system-level integration.
           </p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-end gap-3">
           <Button
             onClick={() => setIsVisible(false)}
             variant="ghost"

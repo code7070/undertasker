@@ -76,12 +76,18 @@ export function AddScheduleDialog({
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Button className="w-full bg-foreground text-background hover:bg-foreground/90 font-black uppercase tracking-widest py-6 gap-2 border-2 border-foreground transition-all rounded-none h-14 lg:static fixed bottom-6 right-6 lg:h-12 lg:w-auto shadow-2xl lg:shadow-none z-50">
+      {/* <Button className="w-full bg-foreground text-background hover:bg-foreground/90 font-black uppercase tracking-widest py-6 gap-2 border-2 border-foreground transition-all rounded-none h-14 lg:static absolute bottom-6 lg:h-12 lg:w-auto shadow-2xl lg:shadow-none z-50 max-w-full">
           <Plus className="h-6 w-6 lg:h-5 lg:w-5" />
           <span className="lg:inline">Initialize Task</span>
-        </Button>
-      </DialogTrigger>
+          </Button> */}
+      <div className="fixed lg:static bottom-0 p-6 lg:p-0 bg-linear-90 from-to-white via-white/80 to-white/50 w-full border left-0">
+        <DialogTrigger asChild>
+          <Button className="font-black uppercase w-full max-w-md mx-auto flex py-5">
+            <Plus className="h-6 w-6 lg:h-5 lg:w-5" />
+            <span>Initialize Task</span>
+          </Button>
+        </DialogTrigger>
+      </div>
       <DialogContent className="sm:max-w-[425px] border-4 border-foreground p-0 overflow-hidden rounded-none">
         <DialogHeader className="p-6 bg-foreground text-background">
           <DialogTitle className="text-2xl font-black uppercase tracking-tight">
