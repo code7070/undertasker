@@ -80,7 +80,7 @@ export function AddScheduleDialog({
           <Plus className="h-6 w-6 lg:h-5 lg:w-5" />
           <span className="lg:inline">Initialize Task</span>
           </Button> */}
-      <div className="fixed lg:static bottom-0 p-6 lg:p-0 bg-white dark:bg-black w-full left-0">
+      <div className="fixed lg:static bottom-0 p-6 lg:p-0 bg-background/70 backdrop-blur-xs w-full left-0">
         <DialogTrigger asChild>
           <Button className="font-black uppercase w-full max-w-md mx-auto flex py-5">
             <Plus className="h-6 w-6 lg:h-5 lg:w-5" />
@@ -125,7 +125,7 @@ export function AddScheduleDialog({
                     <Button
                       variant={"outline"}
                       className={cn(
-                        "w-full justify-start text-left font-mono text-sm border-2 border-foreground rounded-none h-11 hover:bg-muted-extra/20",
+                        "w-full justify-start text-left font-mono text-sm border-2 border-foreground rounded-none h-11 hover:bg-muted-extra/20 text-foreground",
                         !date && "text-muted-foreground"
                       )}
                     >
@@ -165,7 +165,7 @@ export function AddScheduleDialog({
                   type="time"
                   value={time}
                   onChange={(e) => setTime(e.target.value)}
-                  className="border-2 border-foreground focus-visible:ring-0 focus-visible:ring-offset-0 rounded-none h-11 font-mono"
+                  className="border-2 border-foreground focus-visible:ring-0 focus-visible:ring-offset-0 rounded-none h-11 font-mono text-foreground bg-background"
                 />
               </div>
             </div>
@@ -180,7 +180,7 @@ export function AddScheduleDialog({
                 value={recurrence}
                 onValueChange={(value: any) => setRecurrence(value)}
               >
-                <SelectTrigger className="border-2 border-foreground focus:ring-0 focus:ring-offset-0 rounded-none h-11">
+                <SelectTrigger className="border-2 border-foreground focus:ring-0 focus:ring-offset-0 rounded-none h-11 text-foreground">
                   <SelectValue placeholder="Select frequency" />
                 </SelectTrigger>
                 <SelectContent className="border-2 border-foreground rounded-none">
@@ -197,7 +197,7 @@ export function AddScheduleDialog({
               type="button"
               variant="outline"
               onClick={() => setOpen(false)}
-              className="border-2 border-foreground font-bold uppercase tracking-widest rounded-none h-12"
+              className="border-2 border-foreground font-bold uppercase tracking-widest rounded-none h-12 text-foreground"
             >
               Abort
             </Button>

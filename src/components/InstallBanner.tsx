@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export function InstallBanner() {
   const { isInstallable, install } = usePWA();
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     // Only show if installable AND not already in standalone mode
@@ -37,13 +37,13 @@ export function InstallBanner() {
           <Button
             onClick={() => setIsVisible(false)}
             variant="ghost"
-            className="text-background hover:bg-background/10 hover:text-background rounded-none font-bold uppercase"
+            className="text-background hover:bg-background/10 hover:text-background rounded-none font-bold uppercase border-2 border-background"
           >
             Sustain
           </Button>
           <Button
             onClick={install}
-            className="bg-background text-foreground hover:bg-background/90 rounded-none font-black uppercase px-8 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all"
+            className="bg-background text-foreground hover:bg-background/90 rounded-none font-black uppercase px-8 shadow-[4px_4px_0px_0px_var(--color-foreground)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all"
           >
             <Download className="mr-2 h-5 w-5" />
             Install
