@@ -37,11 +37,11 @@ function App() {
         <InstallBanner />
         <header className="border-b-4 border-foreground pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-1">
-            <h1 className="text-6xl font-[1000] tracking-tighter uppercase leading-none">
+            <h1 className="text-4xl md:text-5xl lg:tex-6xl font-[1000] tracking-tighter uppercase leading-none">
               Undertasker
             </h1>
-            <p className="text-xl font-medium tracking-tight opacity-70">
-              DETERMINISTIC SCHEDULE MANAGEMENT
+            <p className="text-lg lg:text-xl font-medium tracking-tight opacity-70">
+              YOUR SCHEDULE MANAGEMENT
             </p>
           </div>
           <div className="flex items-center gap-3">
