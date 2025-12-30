@@ -80,7 +80,7 @@ export function AddScheduleDialog({
           <Plus className="h-6 w-6 lg:h-5 lg:w-5" />
           <span className="lg:inline">Initialize Task</span>
           </Button> */}
-      <div className="fixed lg:static bottom-0 p-6 lg:p-0 bg-linear-90 from-to-white via-white/80 to-white/50 w-full left-0">
+      <div className="fixed lg:static bottom-0 p-6 lg:p-0 bg-white dark:bg-black w-full left-0">
         <DialogTrigger asChild>
           <Button className="font-black uppercase w-full max-w-md mx-auto flex py-5">
             <Plus className="h-6 w-6 lg:h-5 lg:w-5" />
